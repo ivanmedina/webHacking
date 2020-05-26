@@ -1,0 +1,6 @@
+python -m SimpleHTTPServer8080
+php -S 127.0.0.1:8080
+netstat -nlp -t
+nc 127.0.0.1 8080
+GET /test.html 
+

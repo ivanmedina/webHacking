@@ -1,0 +1,25 @@
+we have the next code:
+<? php
+	if ($_GET["name"] || $_GET["age"])
+	{
+	echo "Welcome ".$_GET['name']."</br>";
+	echo "You are ".$_GET['age']." years old.</br>";
+	exit();	
+	}
+?>
+<html>
+	<body>
+		<form action ="<?php $_PHP_SELF?>" method="GET">
+			Name: <input type="text" name ="name" />
+			Age: <input type="text" name ="age" />
+			<input type="sumit" />			
+		</form>
+	</body>
+</html>
+
+php -S 127.0.0.1:8080
+inyectar codigo html, codigo script lo bloque chrome
+para evitar usar funcion htmlspecialchars($_GET['some'])
+
+
+

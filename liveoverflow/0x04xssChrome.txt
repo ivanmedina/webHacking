@@ -1,0 +1,24 @@
+Only on chrome youll find xss auditor
+This can be easily baypassed
+if we have more than one input this is broked
+input1: <script> alert("
+input2: ");</script>
+other example:
+input1: <script>a="
+input2: ";alert(1337);</script>
+http://liveoverflow.com/youtube/xss_testbed.php
+we have: html context, html attribute context in quotes, html attribute context no quites,
+script context and a chrome xss auditor trick
+
+lets pass to attribute context in quites, get['b']
+"><script..../script>
+get['bb']
+this are bypassing htmlspecial codes except the '
+%27> onerror=alert(1);...
+htmlspecialchars() not protect nough.
+You have to specifically set 'ENT_QUOTES' flag, otherwise single quotes are untouched
+we can bypass xss chrome auditor with fake parameter or randomly place 'script'
+
+
+
+

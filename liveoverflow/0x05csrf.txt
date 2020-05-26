@@ -1,0 +1,6 @@
+CSRF
+SAME ORIGIN POLICY
+MEANS THAT WE CANNOT REQUESTS TO OTHER SERVER'S RESOURCES
+, but why we can? beacuse the cookies or token
+
+
